@@ -5,5 +5,5 @@ nameField.addEventListener("input", welcomeName);
 
 function welcomeName() {
   nameOutput.textContent =
-    nameField.value === "" ? EMPTY_NAME : nameField.value;
+    nameField.value.trim() === "" ? EMPTY_NAME : nameField.value;
 }
